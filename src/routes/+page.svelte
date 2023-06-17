@@ -3,7 +3,7 @@
 	import HomeHeader from '../components/cards/home-header.svelte';
 </script>
 
-<div class="mx-3">
+<!-- <div class="mx-3">
 	<div class="container h-full mx-auto justify-center items-center">
 		<div class="card">
 			<header class="card-header">
@@ -13,4 +13,4 @@
 			<footer class="card-footer">(footer)</footer>
 		</div>
 	</div>
-</div>
+</div> -->

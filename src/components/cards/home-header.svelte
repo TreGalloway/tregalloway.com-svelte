@@ -6,6 +6,13 @@
 <main>
 	<div class=" max-w-full">
 		<div class="card flex flex-wrap p-4">
+			<div class="p-2">
+				<Avatar
+					src="https://source.unsplash.com/YOErFW8AfkI/128x128"
+					width=" w-48"
+					rounded="rounded-full"
+				/>
+			</div>
 			<div class="flex grow">
 				<section class="card w-full">
 					<div class="p-4 space-y-4">
@@ -30,13 +37,6 @@
 						</div>
 					</div>
 				</section>
-			</div>
-			<div class="p-2 pl-10">
-				<Avatar
-					src="https://source.unsplash.com/YOErFW8AfkI/128x128"
-					width=" w-48"
-					rounded="rounded-full"
-				/>
 			</div>
 		</div>
 	</div>
