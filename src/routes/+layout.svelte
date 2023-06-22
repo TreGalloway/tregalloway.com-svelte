@@ -6,12 +6,37 @@
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
+	import { AppShell, Avatar } from '@skeletonlabs/skeleton';
 	import SideNav from '../components/nav/side-nav.svelte';
 </script>
 
-<div class="flex h-screen p-10">
-	<SideNav />
-	<div class="">
-		<slot />
-	</div>
-</div>
+<AppShell>
+	<svelte:fragment slot="header">
+		<div class="my-16" />
+	</svelte:fragment>
+	<svelte:fragment slot="sidebarLeft">
+		<SideNav />
+	</svelte:fragment>
+	<!-- (sidebarRight) -->
+	<!-- (pageHeader) -->
+	<!-- Router Slot -->
+	<slot />
+	<!-- ---- / ---- -->
+	<!-- (pageFooter) -->
+	<!-- (footer) -->
+</AppShell>
+
+<style>
+	.sidenav-link {
+		transition: all 0.2s;
+	}
+
+	.sidenav-link:hover {
+		background-color: #474e53;
+	}
+
+	.sidenav-link.active {
+		background-color: #f7fafc;
+		font-weight: bold;
+	}
+</style>
