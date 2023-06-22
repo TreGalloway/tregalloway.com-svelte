@@ -43,6 +43,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@tabler/icons-svelte": "^2.22.0"
+		"@tabler/icons-svelte": "^2.22.0",
+		"swiper": "^9.4.1"
 	}
 }

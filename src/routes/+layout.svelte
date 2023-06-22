@@ -6,7 +6,7 @@
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
-	import { AppShell, Avatar } from '@skeletonlabs/skeleton';
+	import { AppShell } from '@skeletonlabs/skeleton';
 	import SideNav from '../components/nav/side-nav.svelte';
 </script>
 
@@ -17,7 +17,7 @@
 	<svelte:fragment slot="sidebarLeft">
 		<SideNav />
 	</svelte:fragment>
-	<!-- (sidebarRight) -->
+	<svelte:fragment slot="sidebarRight"><div class="mx-24" /></svelte:fragment>
 	<!-- (pageHeader) -->
 	<!-- Router Slot -->
 	<slot />
